@@ -1,0 +1,36 @@
+.custom-carousel .carousel-item img {
+    height: 630px; 
+    object-fit: cover;  
+}
+
+.custom-carousel {
+    max-width: 100%;  
+    margin: 0 auto;  
+}
+
+.custom-carousel .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);  
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .custom-carousel .carousel-item img {
+        height: 400px; /* Adjust the height for tablets */
+    }
+
+    .custom-carousel .carousel-caption {
+        padding: 8px; /* Reduce the padding on smaller screens */
+    }
+}
+
+/* For mobile devices (width <= 480px) */
+@media screen and (max-width: 480px) {
+    .custom-carousel .carousel-item img {
+        height: 300px; /* Further adjust the height for mobile */
+    }
+
+    .custom-carousel .carousel-caption {
+        padding: 6px; /* Further reduce padding for mobile */
+    }
+}

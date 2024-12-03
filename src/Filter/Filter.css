@@ -1,0 +1,78 @@
+.filter {
+    width: 1450px;
+    margin: 0 auto;
+}
+
+.filter-content {
+    padding: 0 1px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.filter-content::-webkit-scrollbar {
+    display: none;
+}
+
+p {
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    letter-spacing: 0.120rem;
+    flex: 0 0 auto;
+    color: #565656;
+}
+
+.filter-content p:hover {
+    transition: 0.3s;
+    color: #48484860;
+}
+
+p.active {
+    color: #000000;
+}
+
+/* Media Query for Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .filter {
+        width: 100%; /* Full width on tablets */
+        padding: 0 10px; /* Add some padding for tablets */
+    }
+
+    .filter-content {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        justify-content: flex-start; /* Align items to the start */
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+
+    p {
+        font-size: 0.8rem; /* Slightly smaller font size for tablets */
+        padding: 5px 10px; /* Add padding for touch interaction */
+        margin: 5px; /* Margin between filter items */
+    }
+}
+
+/* Media Query for Mobile Devices (480px and below) */
+@media screen and (max-width: 480px) {
+    .filter {
+        width: 100%; /* Full width on mobile */
+        padding: 0 5px; /* Reduced padding for mobile */
+    }
+
+    .filter-content {
+        flex-wrap: wrap; /* Allow wrapping on mobile screens */
+        justify-content: center; /* Center the items */
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+
+    p {
+        font-size: 0.75rem; /* Smaller font size for mobile */
+        padding: 5px 8px; /* Smaller padding for mobile */
+        margin: 3px; /* Reduced margin */
+    }
+}

@@ -1,0 +1,90 @@
+.liked-icon {
+    position: absolute;
+    display: inline-block;
+    border:none;
+    top: 5px;
+    right: 8px;
+    font-size: 27px;
+    color: #8a2bfd;
+    z-index: 2;
+}
+
+.notlike {
+    display: block;
+    height: 180px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.empty h3{
+    text-align: center;
+}
+
+.empty p {
+    text-align: center;
+    font-weight: 500;
+}
+
+.backtohome {
+    height: 45px;
+    width: 200px;
+    text-align: center;
+    padding: 13px;
+    margin-left: 570px;
+    display: inline-block;
+    color: #ffffff;
+    background-color: #36a2eb;
+    border-radius: 8px;
+    font-family: "proxima-nova-soft", sans-serif;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .liked-icon {
+        font-size: 24px; /* Adjust icon size for smaller screens */
+        top: 10px; /* Adjust positioning */
+        right: 6px;
+    }
+
+    .notlike {
+        width: 150px; /* Adjust size for better scaling on tablets */
+        height: 150px;
+    }
+
+    .backtohome {
+        margin-left: auto;
+        margin-right: auto; /* Center the button on tablets */
+        width: 100%;
+        margin-top: 20px; /* Add space around button */
+    }
+}
+
+/* For Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .liked-icon {
+        font-size: 22px; /* Smaller icon for mobile */
+        top: 5px;
+        right: 5px;
+    }
+
+    .notlike {
+        width: 120px; /* Further reduce size for mobile */
+        height: 120px;
+    }
+
+    .empty h3 {
+        font-size: 1.2rem; /* Slightly smaller text for mobile */
+    }
+
+    .empty p {
+        font-size: 1rem; /* Scale down paragraph font size */
+    }
+
+    .backtohome {
+        width: 90%; /* Increase button width for mobile */
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px; /* Adjust padding */
+        font-size: 1rem; /* Adjust font size */
+    }
+}

@@ -1,0 +1,96 @@
+main {
+    height: 100%;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.show-more {
+    display: block;
+    margin: 20px auto;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.875rem;
+    letter-spacing: 0.120rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: rgba(49, 49, 196, 0.1);
+    color: #33c;    
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.not-found-container p {
+    text-align: center;
+}
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.spinner {
+    text-align: center;
+}
+
+/* Base styles remain unchanged */
+
+/* Responsive styles for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0 1rem; /* Add padding for better spacing on smaller screens */
+    }
+
+    .show-more {
+        width: 100%; /* Adjust button width to fit smaller screens */
+        font-size: 1rem;
+        height: 45px;
+    }
+
+    .not-found-container p {
+        font-size: 1rem; /* Scale text for readability */
+        padding: 0 1rem;
+    }
+
+    .spinner-container {
+        height: 80vh; /* Adjust height for tablets */
+    }
+}
+
+/* Responsive styles for mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .main-content {
+        flex-direction: column;
+        gap: 1rem; /* Reduce gap for smaller screens */
+    }
+
+    .show-more {
+        width: 90%; /* Maximize button width while maintaining margins */
+        font-size: 0.9rem;
+        height: 40px;
+        border-radius: 8px; /* Slightly smaller radius for compact design */
+    }
+
+    .not-found-container p {
+        font-size: 0.9rem; /* Adjust font size for mobile readability */
+        margin: 0 0.5rem;
+    }
+
+    .spinner-container {
+        height: 70vh; /* Scale height for smaller devices */
+    }
+
+    .spinner {
+        font-size: 0.8rem; /* Reduce size for mobile displays */
+    }
+}
+
